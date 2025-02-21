@@ -17,7 +17,13 @@ This test application can be used either with `sqlite` or `postgres` locally.
 1. After clonning the repo locally set `USE_PSQL` in the `.env` as `0`.
 2. Continue from step `4.`.
 
+## ERD
+
+![Moxie_diagram](https://github.com/user-attachments/assets/e86fa9a9-140f-4856-bb93-f4e60eeb3c96)
+
 ## APIs
+
+![Screenshot 2025-02-21 011930](https://github.com/user-attachments/assets/0335ac43-fba2-468e-8408-85fc822e0407)
 
 - `./test.http` can be used to test the implemented endpoints.
 
