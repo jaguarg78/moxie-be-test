@@ -17,7 +17,7 @@ build/
 venv/
 env/
 # *.env # Environment variables
-.env.* # Other env files
+# .env.* # Other env files
 
 # Log files
 *.log
@@ -50,7 +50,7 @@ Thumbs.db  # Windows thumbnail cache
 .ropeproject/
 __pycache__/
 .DS_Store
-.env
+# .env
 .env.*
 *.swp
 *~
