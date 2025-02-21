@@ -1,0 +1,97 @@
+
+### General
+###
+GET http://127.0.0.1:8000/customers
+
+###
+GET http://127.0.0.1:8000/medspas
+
+
+### Appointments
+###
+GET http://127.0.0.1:8000/customers/1/appointments
+
+###
+GET http://127.0.0.1:8000/customers/1/appointments/1
+
+# Filters
+###
+GET http://127.0.0.1:8000/customers/1/appointments?status=canceled
+
+###
+GET http://127.0.0.1:8000/customers/1/appointments?start_date=2025-04-12
+
+###
+GET http://127.0.0.1:8000/customers/1/appointments?status=scheduled&start_date=2025-03-02
+
+###
+POST http://127.0.0.1:8000/customers/1/appointments
+
+{
+    "start_time": "2025-04-01T14:02:00Z",
+    "service_ids": [1, 2, 3],
+    "medspa_id": 1
+}
+
+# State machine
+###
+PUT http://127.0.0.1:8000/customers/1/appointments/3/complete
+
+###
+PUT http://127.0.0.1:8000/customers/1/appointments/4/cancel
+
+
+# Services
+###
+GET http://127.0.0.1:8000/medspa/1/services
+
+###
+GET http://127.0.0.1:8000/medspa/1/services/7
+
+###
+POST http://127.0.0.1:8000/medspa/1/services
+
+# {
+#     "name": "service_new_5",
+#     "description": "service_description_5",
+#     "price": 1000.8
+# }
+
+{
+    "name": "service_new_1",
+    "description": "service_description_1",
+    "price": 1000.8,
+    "duration": "4:30"
+}
+
+###
+PUT http://127.0.0.1:8000/medspa/1/services/7
+
+# {
+#     "name": "service_new_1_"
+# }
+
+# {
+#     "description": "service_description_1_"
+# }
+
+# {
+#     "price": 1040.8
+# }
+
+# {
+#     "duration": "4:35"
+# }
+
+# {
+#     "name": "service_new_1",
+#     "description": "service_description_1",
+#     "price": 1011.6
+# }
+
+{
+    "name": "service_new_1___",
+    "description": "service_description_1___",
+    "duration": "4:15",
+    "price": 1050.8
+}

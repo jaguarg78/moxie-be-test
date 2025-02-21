@@ -1,0 +1,74 @@
+# Compiled Python files
+__pycache__/
+*.pyc
+*.pyd
+*.egg
+.pytest_cache/
+
+# Distribution / packaging
+dist/
+build/
+*.whl
+*.tar.gz
+*.egg-info
+
+# Virtual environment
+.venv/
+venv/
+env/
+# *.env # Environment variables
+.env.* # Other env files
+
+# Log files
+*.log
+
+# Testing
+.coverage
+htmlcov/
+
+# IDE / Editor specific
+.idea/      # PyCharm
+.vscode/    # VS Code
+.spyderproject # Spyder
+*.swp      # Swap files (Vim, etc.)
+*~         # Backup files (various editors)
+.DS_Store  # macOS Desktop Services Store
+Thumbs.db  # Windows thumbnail cache
+
+# OS Specific
+.cache/ # General cache files
+.local/share/Trash/ # Linux trash
+.thumbnails/ # Linux thumbnails
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# MyPy cache
+.mypy_cache/
+
+# Other
+.ropeproject/
+__pycache__/
+.DS_Store
+.env
+.env.*
+*.swp
+*~
+*.log
+.pytest_cache
+.coverage
+htmlcov
+dist
+build
+*.whl
+*.tar.gz
+*.egg-info
+.venv
+venv
+env
+.idea
+.vscode
+.spyderproject
+.ropeproject
+.mypy_cache
+.ipynb_checkpoints
